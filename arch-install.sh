@@ -24,7 +24,7 @@ echo 'LC_MEASUREMENT=vi_VN.UTF-8' >> /etc/locale.conf
 ln -sf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
 hwclock —-systohc
 
-echo $hostname > /etc/hostname
+echo "$hostname" > /etc/hostname
 echo "127.0.0.1    localhost.localdomain   localhost" > /etc/hosts
 echo "::1          localhost.localdomain   localhost" >> /etc/hosts
 echo "127.0.1.1    $hostname.localdomain    $hostname" >> /etc/hosts
