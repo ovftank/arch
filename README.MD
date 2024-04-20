@@ -122,6 +122,14 @@ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
 <pre><code class="language-bash">arch-chroot /mnt
 </code></pre>
 <ul>
+    <li>Script tự động cài đặt:</li>
+</ul>
+<pre><code class="language-bash">
+sh -c "$(curl -fsSL
+https://raw.githubusercontent.com/tripleseven190504/arch/main/arch-install.sh)"
+</code</pre>
+
+<ul>
     <li>Cấu hình ngôn ngữ hệ thống:<ul>
             <li>Mở tệp <code>locale.gen</code> và bỏ dấu chú thích ngôn ngữ bạn muốn sử dụng:</li>
         </ul>
@@ -160,7 +168,7 @@ nvim /etc/hosts
 passwd (nhập mật khẩu của bạn)
 passwd tên_của_bạn (nhập mật khẩu của bạn)
 EDITOR=vim visudo
-(Loại bỏ ký tự &quot;%&quot; trước %wheel ALL=(ALL) NOPASSWD: ALL)
+(Loại bỏ ký tự &quot;#&quot; trước %wheel ALL=(ALL) NOPASSWD: ALL)
 </code></pre>
 <ul>
     <li>Cài đặt các gói Arch cần thiết và cấu hình theo ý muốn:</li>
