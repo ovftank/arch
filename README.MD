@@ -124,11 +124,9 @@ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
 <ul>
     <li>Script tự động cài đặt:</li>
 </ul>
-<pre><code class="language-bash">
-sh -c "$(curl -fsSL
+<pre><code class="language-bash">sh -c "$(curl -fsSL
 https://raw.githubusercontent.com/tripleseven190504/arch/main/arch-install.sh)"
 </code</pre>
-
 <ul>
     <li>Cấu hình ngôn ngữ hệ thống:<ul>
             <li>Mở tệp <code>locale.gen</code> và bỏ dấu chú thích ngôn ngữ bạn muốn sử dụng:</li>
