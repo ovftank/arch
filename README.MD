@@ -126,8 +126,8 @@ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
     <li>Script tự động cài đặt:</li>
 </ul>
 <pre><code class="language-bash">wget https://raw.githubusercontent.com/tripleseven190504/arch/main/arch-install.sh
-    chmod +x ./arch-install.sh
-    ./arch-install.sh
+chmod +x ./arch-install.sh
+./arch-install.sh
 </code></pre>
 <h4 id="cài-đặt-thủ-công">2. Cài đặt thủ công</h4>
 <ul>
