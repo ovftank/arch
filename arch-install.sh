@@ -40,8 +40,9 @@ passwd "$username"
 
 echo "Người dùng $username đã được tạo và cấu hình."
 
-pacman -S networkmanager grub efibootmgr --noconfirm
+pacman -S networkmanager grub efibootmgr openssh --noconfirm
 systemctl enable NetworkManager
+systemctl enable sshd
 grub-install --efi-directory=/boot --bootloader-id=arch
 grub-mkconfig -o /boot/grub/grub.cfg
 EDITOR=vim visudo
