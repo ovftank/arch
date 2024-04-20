@@ -121,12 +121,14 @@ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
 </ul>
 <pre><code class="language-bash">arch-chroot /mnt
 </code></pre>
+<h4 id="cài-đặt-với-script">1. Cài đặt tự động với script</h4>
 <ul>
     <li>Script tự động cài đặt:</li>
 </ul>
 <pre><code class="language-bash">sh -c "$(curl -fsSL
 https://raw.githubusercontent.com/tripleseven190504/arch/main/arch-install.sh)"
 </code></pre>
+<h4 id="cài-đặt-thủ-công">2. Cài đặt thủ công</h4>
 <ul>
     <li>Cấu hình ngôn ngữ hệ thống:<ul>
             <li>Mở tệp <code>locale.gen</code> và bỏ dấu chú thích ngôn ngữ bạn muốn sử dụng:</li>
