@@ -112,7 +112,7 @@ pacman-key --populate archlinux
 <pre><code class="language-bash">pacman -Syyu --noconfirm
 pacman -S reflector --noconfirm
 reflector --country VN --age 12 --sort rate --save /etc/pacman.d/mirrorlist
-pacstrap /mnt linux linux-firmware base base-devel vim
+pacstrap /mnt linux linux-firmware base base-devel vim wget
 genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
 </code></pre>
 <h3 id="2-cấu-hình-thiết-lập-cơ-bản-⚙️">2. Cấu hình thiết lập cơ bản ⚙️</h3>
@@ -125,8 +125,9 @@ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
 <ul>
     <li>Script tự động cài đặt:</li>
 </ul>
-<pre><code class="language-bash">sh -c "$(curl -fsSL
-https://raw.githubusercontent.com/tripleseven190504/arch/main/arch-install.sh)"
+<pre><code class="language-bash">wget https://raw.githubusercontent.com/tripleseven190504/arch/main/arch-install.sh
+    chmod +x ./arch-install.sh
+    ./arch-install.sh
 </code></pre>
 <h4 id="cài-đặt-thủ-công">2. Cài đặt thủ công</h4>
 <ul>
