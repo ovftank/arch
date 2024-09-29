@@ -146,16 +146,16 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/tripleseven190504/arch/mai
       ```
 
     - Chỉnh sửa tệp `locale.conf` bằng `vim`:
-
+      ```bash
       vim /etc/locale.conf
       LANG=en_US.UTF-8
       LANGUAGE=en_US
-
+      ```
     - Đặt múi giờ:
-
+      ```bash
       ln -sf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
       hwclock —-systohc
-
+      ```
   - 4.3\. Cá nhân hóa hệ thống của bạn 🌟
 
     - Đặt tên máy chủ:
