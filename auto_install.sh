@@ -24,8 +24,4 @@ reflector --country VN --age 12 --sort rate --save /etc/pacman.d/mirrorlist
 pacstrap /mnt linux linux-firmware base base-devel vim wget openssh
 genfstab -U /mnt >> /mnt/etc/fstab
 
-arch-chroot /mnt <<EOF
-wget https://raw.githubusercontent.com/ovftank/arch/main/arch-install.sh
-chmod +x ./arch-install.sh
-./arch-install.sh
-EOF
+arch-chroot /mnt
