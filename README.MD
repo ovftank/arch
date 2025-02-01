@@ -45,13 +45,13 @@ Lưu ý: Các bước này có thể thay đổi tùy thuộc vào phiên bản 
 - 1.1. Cài đặt hệ thống trong ArchISO
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/tripleseven190504/arch/main/auto_install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ovftank/arch/main/auto_install.sh)"
 ```
 
 - 1.2. Cài đặt hệ thống trong ArchChroot
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/tripleseven190504/arch/main/arch-install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ovftank/arch/main/arch-install.sh)"
 ```
 
 ### 2. Cài đặt thủ công
@@ -201,4 +201,4 @@ umount -R /mnt
 reboot
 ```
 
-#### [👉 Custom](https://github.com/tripleseven190504/arch/blob/main/CUSTOM.MD)
+#### [👉 Custom](https://github.com/ovftank/arch/blob/main/CUSTOM.MD)
