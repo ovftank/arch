@@ -25,7 +25,7 @@ pacstrap /mnt linux linux-firmware base base-devel vim wget openssh
 genfstab -U /mnt >> /mnt/etc/fstab
 
 arch-chroot /mnt <<EOF
-wget https://raw.githubusercontent.com/tripleseven190504/arch/main/arch-install.sh
+wget https://raw.githubusercontent.com/ovftank/arch/main/arch-install.sh
 chmod +x ./arch-install.sh
 ./arch-install.sh
 EOF
